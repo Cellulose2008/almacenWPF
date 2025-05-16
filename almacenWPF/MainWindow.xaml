@@ -1,0 +1,45 @@
+﻿<Window x:Class="AlmacenAppWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="400" Width="400">
+    <Grid x:Name="buttonRequest" Margin="74,10,10,41">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="53.92"/>
+            <RowDefinition Height="Auto" MinHeight="127.479"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="36"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,30,0,83" Grid.RowSpan="2">
+            <TextBlock x:Name="nombreTag" Text="Nombre:" Margin="10"/>
+            <TextBox x:Name="textBoxNombre" Width="250" HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="0,32,0,12" Grid.RowSpan="3">
+            <TextBlock x:Name="contraTag" Text="Contraseña:" Margin="10"/>
+            <PasswordBox x:Name="textBoxContra" Width="250" HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <Button x:Name="buttonLogin" Grid.Row="1" Content="Iniciar sesión" Click="buttonLogin_Click" Margin="66,127,0,4" Grid.RowSpan="3" HorizontalAlignment="Left" Width="121"/>
+
+
+        <TextBlock x:Name="textBlockPiezas" Grid.Row="1" TextWrapping="Wrap" Text="aaaaaaaaaaaa" Margin="-32,12,32,10" Visibility="Collapsed"/>
+        <TextBlock x:Name="textBlockRoleMessage" Visibility="Collapsed" HorizontalAlignment="Left" Margin="-32,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="20"/>
+
+        <Button Visibility="Collapsed" x:Name="buttonAgregar" Content="Agregar Herramienta" HorizontalAlignment="Left" Margin="-32,1,0,0" Grid.Row="3" VerticalAlignment="Top" Height="30" Width="121" Click="buttonAgregar_Click"/>
+
+        <TextBlock Visibility="Collapsed" x:Name="newToolTag" HorizontalAlignment="Left" Margin="-32,28,0,0" TextWrapping="Wrap" Text="Nombre de la herramienta" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox x:Name="textBoxNewToolName" Visibility="Collapsed" HorizontalAlignment="Left" Margin="-32,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" Grid.Row="1"/>
+
+        <Button Visibility="Collapsed" x:Name="buttonConfirmar" Content="Agregar" HorizontalAlignment="Left" Margin="-32,107,0,0" Grid.Row="1" VerticalAlignment="Top" Height="30" Width="70" Grid.RowSpan="3" Click="buttonConfirmar_Click"/>
+        <Button Visibility="Collapsed" x:Name="buttonReturnFromAdd" Content="Regresar" HorizontalAlignment="Left" Margin="219,107,0,0" Grid.Row="1" VerticalAlignment="Top" Height="30" Grid.RowSpan="3" Width="58" Click="buttonReturnFromAdd_Click"/>
+
+        <Button x:Name="buttonRentar" Visibility="Collapsed" Content="Pedir Piezas" HorizontalAlignment="Left" Margin="-42,0,0,0" Grid.Row="3" VerticalAlignment="Center" Height="32" Width="89" Click="buttonRentar_Click"/>
+
+        <TextBox x:Name="materialesAPedir" Visibility="Collapsed" HorizontalAlignment="Left" Margin="-32,2,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="317" Height="16"/>
+        <Button x:Name="buttonRequest1" Content="Pedir" Visibility="Collapsed" HorizontalAlignment="Left" Margin="-32,36,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.RowSpan="2" Height="32" Width="69" Click="buttonRequest_Click"/>
+        <Button x:Name="buttonReturnFromRequest" Visibility="Collapsed" Content="Regresar" HorizontalAlignment="Left" Margin="215,36,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.RowSpan="2" Height="32" Width="67" Click="buttonReturnFromRequest_Click"/>
+
+    </Grid>
+</Window>
